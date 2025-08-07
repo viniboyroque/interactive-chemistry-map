@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+}
+
+#map-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#map-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.map-button {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.4); /* mais visível */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* borda sutil */
+  border-radius: 21px; /* arredondado para combinar com caixa de texto */
+  padding: 0;
+  cursor: pointer;
+  font-size: 1rem;
+  color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.map-button:hover {
+  background: rgba(255, 255, 255, 0); /* totalmente transparente ao hover */
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.4); /* glow */
+  border-color: rgba(255, 255, 255, 0.6); /* borda mais visível ao hover */
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.popup-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.popup-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #888;
+  cursor: pointer;
+}
+.close:hover {
+  color: #000;
+}

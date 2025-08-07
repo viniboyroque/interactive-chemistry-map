@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cartografia Histórica da Química</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="map-container">
+    <img src="images/a-idade-da-quimica_final.jpg" alt="Mapa da Química" id="map-image">
+
+    <button class="map-button" style="top: 8%; left: 47%;  width: 13.5%; height: 10%" onclick="showPopup('egipcia')">
+      Alquimia Egípcia-Helenística
+    </button>
+
+    <button class="map-button" style="top: 39.7%; left: 42.5%; width: 8.2%; height: 8%" onclick="showPopup('moderna')">
+      Química Moderna
+    </button>
+
+    <button class="map-button" style="top: 34%; left: 75%; width: 8.2%; height: 8%" onclick="showPopup('proto')">
+      Proto Química
+    </button>
+  </div>
+
+  <div id="popup-egipcia" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="hidePopup('egipcia')">&times;</span>
+      <h2>Alquimia Egípcia-Helenística</h2>
+      <img src="images/egipcia.png" alt="Egípcia" class="popup-img">
+      <p>Esta fase da alquimia surgiu no Egito helenístico no século III a.C., influenciada pela fusão da cultura grega com o saber egípcio.</p>
+    </div>
+  </div>
+
+  <div id="popup-moderna" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="hidePopup('moderna')">&times;</span>
+      <h2>Química Moderna</h2>
+      <img src="images/moderna.png" alt="Moderna" class="popup-img">
+      <p>A química moderna emergiu no século XVIII com Lavoisier, que introduziu métodos quantitativos e rompeu com a teoria do flogisto.</p>
+    </div>
+  </div>
+
+  <div id="popup-proto" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="hidePopup('proto')">&times;</span>
+      <h2>Proto Química</h2>
+      <img src="images/proto.jpg" alt="Proto Química" class="popup-img">
+      <p>A Proto Química se desenvolveu no século XVII como uma transição entre a alquimia e a química científica.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
